@@ -1,0 +1,190 @@
+<!DOCTYPE html5>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suricata</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Diseño responsivo-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/img/timon favicon.png" type="timonsuricata">
+    <script src="https://kit.fontawesome.com/d6f22da2ca.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css"> <!-- Instalación de bootstrap css minificado por descarga -->
+    <link rel="stylesheet" href="assets/css/estilo.css">
+</head>
+<body>
+    <!-- div content -->            <!-- Había puesto un div content para realizar modificaciones posteriormente, pero al final no fue necesario, así que lo eliminé -->
+        <!-- Barra navegador-->
+                                                <!-- Esta barra es responsiva y adaptable a todas las resoluciones. Estuve como 2 horas creando una que sólo se mostrara para resoluciones más pequeñas sin saber que esta funcionara así. Pero ahí está, funciona y bonito :D -->
+            <nav class="navbar navbar-expand-lg colorbarra">
+                <div class="container-fluid">
+                <a class="navbar-brand ms-5" href="#"><img src="assets/img/logo.png" alt="Suricata"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-auto me-5">    <!-- ms-auto para correr todo el texto interior hacia la derecha al crear un margen a la izquierda del elemento (ms-auto = margin-left automático), y me 4 para el margen a la derecha -->
+                    <a class="nav-link" href="#">Inicio</a> <!-- Aquí cambié el color en el css en lugar de añadir text-white al class porque así abarcaba el texto completo de la línea, en lugar de añadírselo a cada <a> de la barra. Se puede dejar el atributo aria-current="page" para que indique la página actual cambiando el color de la fuente en el menú -->
+                    <a class="nav-link" href="#">Productos</a>
+                    <a class="nav-link" href="#">Contacto</a>
+                    </div>
+                </div>
+                </div>
+                
+            </nav>
+
+        <!-- Fin Barra navegador -->
+
+        <!-- Nuestros productos -->
+        <header class="productos my-5 py-3">
+            <h1 class="text-center">Nuestros productos</h1>
+        </header>
+        
+
+        <!-- Medio -->
+
+        <!-- Alineadas según resolución de pantalla-->
+        <div class="container mb-5"> <!-- El div con la clase "container" habilita márgenes automáticos para la sección -->
+            <div class="row">   <!-- Agrupar los elementos (cards en este caso) dentro de una división con la clase "row" para posteriormente trabajar las columnas en el sistema de grillas -->
+                <div class="col-xs-12 col-md-6 col-lg-4">
+                    <div class="card mx-auto" style="width: 18rem;">    <!-- Al añadir mx-auto dentro de la clase card se logra centrar el texto de la clase card al crear márgenes horizontales (izquierda-derecha) para el contenedor de la card -->
+                        <img src="assets/img/colaciones.jpg" class="card-img-top" alt="colaciones">
+                        <div class="card-body">
+                        <h5 class="card-title">Colaciones</h5>
+                        <p class="card-text">Sed ut perspiciatis unde omnis iste natus error sit.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Morbi leo risus</li>
+                        <li class="list-group-item">Porta ac consectetur ac</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link text-decoration-none">Ver más</a>
+                            <a href="#" class="card-link text-decoration-none">Comprar</a>
+                        </div>
+                </div>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-4">
+                    <div class="card mx-auto" style="width: 18rem;">
+                        <img src="assets/img/desayunos.jpg" class="card-img-top" alt="desayunito">
+                        <div class="card-body">
+                        <h5 class="card-title">Desayunos</h5>
+                        <p class="card-text">Iste natus error sit voluptatem accusantium doloremque.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Morbi leo risus</li>
+                            <li class="list-group-item">Porta ac consectetur ac</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link text-decoration-none">Ver más</a>
+                            <a href="#" class="card-link text-decoration-none">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-4">
+                    <div class="card mx-auto" style="width: 18rem;">
+                        <img src="assets/img/bebidas.jpg" class="card-img-top" alt="bebiditas">
+                        <div class="card-body">
+                        <h5 class="card-title">Bebidas</h5>
+                        <p class="card-text">Doloremque laudantium, totam rem aperiam, eaque.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Morbi leo risus</li>
+                            <li class="list-group-item">Porta ac consectetur ac</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link text-decoration-none">Ver más</a>
+                            <a href="#" class="card-link text-decoration-none">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-4">
+                    <div class="card mx-auto mt-5" style="width: 18rem;">
+                        <img src="assets/img/verduras.jpg" class="card-img-top" alt="Verduras">
+                        <div class="card-body">
+                        <h5 class="card-title">Verduras</h5>
+                        <p class="card-text">Ipsa quae ab illo inventore veritatis et quasi architecto.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Morbi leo risus</li>
+                            <li class="list-group-item">Porta ac consectetur ac</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link text-decoration-none">Ver más</a>
+                            <a href="#" class="card-link text-decoration-none">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-4">
+                    <div class="card mx-auto mt-5" style="width: 18rem;">
+                        <img src="assets/img/dulces.jpg" class="card-img-top" alt="DULCEEEES">
+                        <div class="card-body">
+                        <h5 class="card-title">Dulces</h5>
+                        <p class="card-text">Some quick example text to build on the card title and</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Dorime</li>
+                        <li class="list-group-item">Interimo</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link text-decoration-none">Ver más</a>
+                            <a href="#" class="card-link text-decoration-none">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-4">
+                    <div class="card mx-auto mt-5" style="width: 18rem;">
+                        <img src="assets/img/empanadas.jpg" class="card-img-top" alt="Faltan 5 meses pal 18">
+                        <div class="card-body">
+                        <h5 class="card-title">Empanadas</h5>
+                        <p class="card-text">Some quick example text to build on the card title and</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Adapare</li>
+                        <li class="list-group-item">Dorime</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link text-decoration-none">Ver más</a>
+                            <a href="#" class="card-link text-decoration-none">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- Cierre de la división row -->
+        </div> <!-- Cierre del container -->
+
+
+
+        <!-- Fin del Medio -->
+
+        <!-- Medios de pago -->
+        <div class="container-fluid mediodepago text-white pt-5 mt-5 d-none d-md-block">       <!-- En la sección display de la documentación de bootstrap se muestra cómo ocultar secciones, aquí se puede ocultar con d-(dimensión)-none para personalizarlo según la pantalla, y para ocultarlo sólo en xs se emplea d-none -->
+            <div class="row text-center">
+                <h1 class="col-xs-12 col-md-6">Ahora aceptamos</h1>
+                    <div class="icons-section">
+                        <h1 class="col-xs-12 col-md-6 d-flex justify-content-center align-items-center">
+                            <i class="fa-brands fa-cc-mastercard"></i>
+                            <i class="fa-brands fa-cc-visa"></i>
+                            <i class="fa-brands fa-cc-amex"></i>
+                            <i class="fa-brands fa-cc-diners-club"></i>
+                            <i class="fa-brands fa-cc-paypal"></i>
+                            <i class="fa-brands fa-cc-discover"></i>
+
+                        </h1>
+                    </div>
+            </div>    
+        </div>
+        <!-- Fin de medios de pago -->
+
+        <!-- Footer -->
+        
+        <footer class="container-fluid text-center y-flex py-4" > <!-- container-fluid para crear márgenes automáticos. Las demás clases de text-center y-flex py-4 son para alinear y enmarcar el contenido con padding -->
+            <img class="img-fluid" src="assets/img/logo-footer.png" alt="Timón sin Pumba"> <!-- Agregando la clase "img-fluid" al <img> la vuelve una imagen responsiva -->
+        </footer>
+
+        <!-- Fin del Footer -->
+    <!-- Fin div content -->
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script> <!-- Instalación de javascript de bootstrap por descarga -->
+</body>
+</html>

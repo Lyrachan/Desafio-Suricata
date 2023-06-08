@@ -1,0 +1,72 @@
+.colorbarra {
+    background-color:  #e83e8c;
+}
+
+.barradesplegable {
+    color: #ffffff;
+}
+
+.navbar-nav a {
+    color: #ffffff;
+}
+
+header h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 4rem;
+    color: #707070;
+}
+
+.mediodepago {
+    height: 150px;      /* Como le di la clase -fluid al container no es necesario agregar width: 100%; (funciona también con imágenes :D) */
+    background-color: #17a2b8;
+}
+
+
+.row h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+.row h5, p, .list-group-item{
+    color: #212529; /* El color negro Eerie-black añadido a todo el texto de la card, excepto a los links*/
+}
+
+.icons-section {
+    width: 5rem;
+    margin-left: 8rem;
+    fill: #ffffff;
+    display: inline-block;
+}
+
+.icons-section i {
+    margin-left: 1rem;
+}
+
+footer {
+    background-color:  #e83e8c;
+}
+
+footer .img-fluid{
+    height: 6rem;
+}
+
+
+/* colores: 
+    #212529 "Eerie-Black"
+    #e83e8c pink
+    #17a2b8 calipso*/
+
+
+    /*
+    
+
+ 
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░█▀▀░█▀█░█▀░▀░█░░▀░▀█▀░█▀█░░
+                            █▀░░█▀█░█░░█░█░░█░░█░░█░█░░
+                            ▀░░░▀░▀░▀▀░▀░▀▀░▀░░▀░░▀▀▀░░░░░░░░░░░░░░░░░░░░░░░░░░░░       No mentira, me costó en algunas partes, pero se logró :D
+
+                                    (Dejo comentarios en secciones que me parecieron importantes por si las tengo que repasar en el futuro,
+                                    así las identifico más rápido y puedo sistematizar mejor la creación de página y sus componentes
+    
+    */
